@@ -24,7 +24,6 @@ function App() {
       document.getElementById(event.key.toUpperCase()).currentTime = 0;
       document.getElementById(event.key.toUpperCase()).play();
       setDisplayText(drums[event.key.toLowerCase()]);
-      console.log(drums[event.key.toLowerCase()] + " at " + Date.now());
     }
   }
 
@@ -34,8 +33,6 @@ function App() {
       document.getElementById(event.currentTarget.value).currentTime = 0;
       document.getElementById(event.currentTarget.value).play();
       setDisplayText(drums[event.currentTarget.value.toLowerCase()]);
-      console.log(
-        drums[event.currentTarget.value.toLowerCase()] + " at " + Date.now()
       );
     }
   }
