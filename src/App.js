@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 function App() {
-  const [displayText, setDisplayText] = React.useState("");
+  const [displayText, setDisplayText] = React.useState("Mike's Drum Machine!");
 
   const drums = {
     q: "Kick",
@@ -33,13 +33,11 @@ function App() {
       document.getElementById(event.currentTarget.value).currentTime = 0;
       document.getElementById(event.currentTarget.value).play();
       setDisplayText(drums[event.currentTarget.value.toLowerCase()]);
-      );
     }
   }
 
   return (
     <div id="drum-machine">
-      <h1 id="title">Mike's Drum Machine!</h1>
       <div id="display">{displayText}</div>
       <div id="drum-pads">
         <button
@@ -53,7 +51,7 @@ function App() {
           <div className="key">Q</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-Kicks01.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-Kicks01.wav"
             type="audio/wav"
             className="clip"
             id="Q"
@@ -65,7 +63,7 @@ function App() {
           <div className="key">W</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-Snare01.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-Snare01.wav"
             type="audio/wav"
             className="clip"
             id="W"
@@ -82,7 +80,7 @@ function App() {
           <div className="key">E</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-HiHats01.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-HiHats01.wav"
             type="audio/wav"
             className="clip"
             id="E"
@@ -99,7 +97,7 @@ function App() {
           <div className="key">A</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-OpenHiHats01.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-OpenHiHats01.wav"
             type="audio/wav"
             className="clip"
             id="A"
@@ -116,7 +114,7 @@ function App() {
           <div className="key">S</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-Ride1.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-Ride1.wav"
             type="audio/wav"
             className="clip"
             id="S"
@@ -128,7 +126,7 @@ function App() {
           <div className="key">D</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-Tom1.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-Tom1.wav"
             type="audio/wav"
             className="clip"
             id="D"
@@ -145,7 +143,7 @@ function App() {
           <div className="key">Z</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-Rim1.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-Rim1.wav"
             type="audio/wav"
             className="clip"
             id="Z"
@@ -157,7 +155,7 @@ function App() {
           <div className="key">X</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-Clap01.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-Clap01.wav"
             type="audio/wav"
             className="clip"
             id="X"
@@ -174,7 +172,7 @@ function App() {
           <div className="key">C</div>
           <audio
             preload="auto"
-            src="http://mikeshecket.com/drums/808-Cowbell1.wav"
+            src="https://drummachine.mikeshecket.com/drums/808-Cowbell1.wav"
             type="audio/wav"
             className="clip"
             id="C"
